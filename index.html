@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="./libs/babylon.2.2.js"></script>
+    <script src="./libs/hand.js"></script>
+    <script src="./libs/cannon.js"></script>
+    <script src="./libs/Oimo.js"></script>
+    <script src =js/basicload.js></script>
+    <script src="./libs/babylon.objFileLoader.js"></script>
+
+    <style>
+        html, body{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #renderCanvas{
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <button onclick="addBox()">addBox</button>
+    <button onclick="addSphere()">addSphere</button>
+    <button onclick="addPlane()">addPlane</button>
+    <button onclick="addCylinder()">addCylinder</button>
+    <button onclick="addTorus()">addTorus</button>
+    <button onclick="addLines()">addLines</button>
+    <button onclick="addAll()">addAll</button>
+    <button onclick="loadWatership()">loadWatership</button>
+</p>
+<p>
+    <canvas id = "renderCanvas" ></canvas>
+</p>
+
+<script type="text/javascript">
+    window.onload = function(){
+        createScene();
+    }
+</script>
+
+</body>
+</html>
